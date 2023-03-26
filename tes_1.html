@@ -1,0 +1,89 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg: hsl(210, 46%, 95%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-clr: hsl(214, 17%, 51%);
+  --heading-clr: hsl(217, 19%, 35%);
+}
+body {
+  min-height: 100vh;
+  color: var(--text-clr);
+  background: var(--main-bg);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  max-width: 425px;
+  background: var(--card-bg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin: 1.7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+main .image-container {
+  overflow: hidden;
+}
+main .image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  transition: all 0.5s linear;
+}
+main .image-container:hover > img {
+  transform: scale(1.2);
+}
+main .text .text-up {
+  padding: 2rem;
+}
+.text-up h1 {
+  color: var(--heading-clr);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+  main {
+    max-width: 850px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: 5rem;
+  }
+  main .image-container img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+</style>
+<body>
+  <main>
+    <div class="image-container">
+      <img src="drawers.jpg" alt="flower-pot on a drawer">
+    </div>
+    <div class="text">
+      <section class="text-up">
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
